@@ -14,20 +14,6 @@ const config = {
     chunkFilename: 'js/[name].js?v=[chunkhash:5]',
     path: path.resolve('app/assets'),
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, 'app'),
-    watchContentBase: true,
-    writeToDisk: true,
-    open: true,
-  },
-  bail: true,
-  performance: { hints: false },
-  stats: {
-    assetsSort: '!size',
-    builtAt: false,
-    children: false,
-    modules: false,
-  },
   module: {
     rules: [
       {
@@ -68,9 +54,6 @@ const config = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].css?v=[chunkhash:5]',
     }),
-    new WebpackRequireFrom({
-      variableName: 'window.cdnUrl',
-    })
   ],
   mode: prod ? 'production' : 'development',
 };

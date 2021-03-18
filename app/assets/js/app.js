@@ -178,24 +178,7 @@
 /******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	}();
 /******/ 	
-/******/ 	/* webpack/runtime/compat */
-/******/ 	
-/******/ 	// WebpackRequireFrom
-/******/ 	Object.defineProperty(__webpack_require__, "p", {
-/******/ 	  get: function () {
-/******/ 	try {
-/******/ 	  if (typeof window.cdnUrl !== "string") {
-/******/ 	    throw new Error("WebpackRequireFrom: 'window.cdnUrl' is not a string or not available at runtime. See https://github.com/agoldis/webpack-require-from#troubleshooting");
-/******/ 	  }
-/******/ 	  return window.cdnUrl;
-/******/ 	} catch (e) {
-/******/ 	  if (!false) {
-/******/ 	    console.error(e);
-/******/ 	  }
-/******/ 	  return "auto";
-/******/ 	}
-/******/ 	 }
-/******/ 	});/* webpack/runtime/css loading */
+/******/ 	/* webpack/runtime/css loading */
 /******/ 	!function() {
 /******/ 		var createStylesheet = function(chunkId, fullhref, resolve, reject) {
 /******/ 			var linkTag = document.createElement("link");
